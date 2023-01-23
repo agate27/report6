@@ -14,10 +14,10 @@ public class Girl {
     public void showStatus() {
         System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲");
         System.out.println("--今日のステータスを表示します--");
-        System.out.printf("%s:HP %d\n", name, madness);
+        System.out.printf("%s:狂気度％ %d\n", name, madness);
         System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲");
     }
-    
+
     public void decrease(int happiness) {
         if(happiness < 0) {
            throw new IllegalArgumentException("Character.damaged:引数damegeは正の数である必要があります");
@@ -44,7 +44,7 @@ public class Girl {
             System.out.println("");
             decrease(happiness);
         }else{
-            System.out.println("---" + name + "何も上げることができなかった---");
+            System.out.println("---" + name + "に何もあげることができなかった---");
             increase(madness);
             System.out.println(": (っ`ω´c):ﾑﾑﾑﾑﾑｩ");
             if(madness >=100 ){

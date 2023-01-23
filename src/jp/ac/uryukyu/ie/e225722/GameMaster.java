@@ -5,8 +5,13 @@ import java.util.List;
 
 public class GameMaster {
     private Quiz[] qusetions = new Quiz[] {
-        new YesNoQuiz("womanの複数形は women", "まる",1),
-        new WritingQuiz("みかんを表す英単語は", "orange",1)
+        new YesNoQuiz("の複数形は women", "まる",1),
+        new YesNoQuiz("の複数形は women", "まる",1),
+        new YesNoQuiz("の複数形は women", "まる",1),
+        new YesNoQuiz("の複数形は women", "まる",1),
+        new WritingQuiz("を表す英単語は", "orange",1),
+        new WritingQuiz("を表す英単語は", "orange",1),
+        new WritingQuiz("を表す英単語は", "orange",1),
     };
 
     public void gameStart(Player player,Girl girl){
@@ -18,6 +23,7 @@ public class GameMaster {
             
             System.out.println(question.getQuiz());
             List<String> answerList = new ArrayList<String>();
+            
             do{
                 String input = player.Solution();
                 if (question.cheak(input)){

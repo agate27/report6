@@ -4,12 +4,14 @@ public class Main {
     public static void main(String[] args){
         Player player = new Player();
         GameMaster gameMaster = new GameMaster();
-        Girl girl = new Girl("丼子", 10);
+        Girl girl = new Girl("丼子", 80);
+
         System.out.println("∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴　୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴");
-        System.out.println("あなたは森の中で謎の生命体(  ◝▿◜  )を保護しました。");
-        System.out.println("どうやら名前は" + girl.getName() + "と話しています。");
-        System.out.println("大変！！どうやらお腹が減っているようです。");
-        System.out.println("クイズに正しく答えてご飯を獲得しましょう！");
+        System.out.println("あなたはとあるダンジョンの隠し部屋で、謎の生命体(  ◝▿◜  )に出会いました。");
+        System.out.println("名前は" + girl.getName() + "と話しています。");
+        System.out.println("どうやらお腹が減っているようで、このままだとヤバそうです。。");
+        System.out.println("クイズに正しく答えて食べ物を獲得しましょう！");
+        System.out.println("獲得した食べ物を与えて狂気度を下げましょう");
         System.out.println("∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴　୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴");
         System.out.print("理解できましたか？ (yse/はい)");
 
@@ -21,7 +23,7 @@ public class Main {
             }
             System.out.println("(  ◝▿◜  )");
         }while(true);
-        
+
         gameMaster.gameStart(player, girl);
     }
 }
