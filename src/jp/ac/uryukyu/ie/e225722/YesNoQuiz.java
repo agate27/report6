@@ -29,6 +29,10 @@ public class YesNoQuiz extends Quiz{
 
     @Override
     public int getHappyness(){
+        //引数が正しくない場合。
+        if(happiness < 0) {
+            throw new IllegalArgumentException("Girl.happiness:引数happynessは正の数である必要があります");
+        }
         return happiness;
     }
     

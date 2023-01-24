@@ -8,11 +8,11 @@ public class Main {
         
         //概要説明
         System.out.println("∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴　୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴");
-        System.out.println("あなたはとあるダンジョンの隠し部屋で、謎の生命体(  ◝▿◜  )に出会いました。");
+        System.out.println("あなたはとあるダンジョンの隠し部屋で、謎の生命体(女の子？)(  ◝▿◜  )に出会いました。");
         System.out.println("名前は" + girl.getName() + "と話しています。");
         System.out.println("どうやらお腹が減っているようで、このままだとヤバそうです。。");
         System.out.println("クイズに正しく答えて食べ物を獲得しましょう！");
-        System.out.println("獲得した食べ物を与えて狂気度を下げましょう");
+        System.out.println("獲得した食べ物を与えて" + girl.getName() +"の狂気度を下げましょう");
         System.out.println("狂気度が100％になると...");
         System.out.println("∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴　୨୧ ∴∵∴ ୨୧ ∴∵∴ ୨୧ ∴∵∴");
         System.out.print("理解できましたか？ (yse/はい)");

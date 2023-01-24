@@ -9,7 +9,7 @@ public class Girl {
     private int madness;
     private boolean dangerous;
 
-    
+
     /**コンストラクタ、名前、狂気度を設定する。
      * @param name　名前
      * @param madness　狂気度
@@ -37,10 +37,6 @@ public class Girl {
      * @param happiness　クイズによる幸福度
      */
     public void decrease(int happiness) {
-        //引数が正しくない場合。
-        if(happiness < 0) {
-           throw new IllegalArgumentException("Character.damaged:引数damegeは正の数である必要があります");
-        }
         //現在の狂気度からhappinessを引く。
         this.madness -= happiness;
         System.out.print("狂気度が" + happiness + "％減少した。");
@@ -54,7 +50,7 @@ public class Girl {
     public void increase(int madness){
          //引数が正しくない場合。
         if(madness < 0) {
-            throw new IllegalArgumentException("Character.resilience:引数resilienceは正の数である必要があります");
+            throw new IllegalArgumentException("girl.increase:引数madnessは正の数である必要があります");
         }
         //現在の狂気度にmadnessを足して計算する
         this.madness += madness;
@@ -62,7 +58,7 @@ public class Girl {
     }
 
 
-    /**クイズの判定結果から、狂気度について計算するメソッド。
+    /**クイズの判定結果から、起こすアクションについてのメソッド
      * GameMasterから得られる判定、狂気度、幸福度を用いて計算します。
      * 狂気度が100以上の場合は
      * @param result　クイズの判定結果
@@ -93,6 +89,7 @@ public class Girl {
             if(this.madness >=100 ){
                 //100以上の場合dangerousをtrueにする。
                 dangerous = true;
+                System.out.println("狂気度が100％を超えました。");
             }
         }
     }
